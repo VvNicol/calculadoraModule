@@ -1,0 +1,54 @@
+body {
+    background-color: #2e3b4e;
+    /* Color de fondo oscuro */
+}
+
+.calculator-container {
+    background-color: #3f4a61;
+    /* Fondo gris oscuro para la calculadora */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sombra más pronunciada */
+}
+
+#resultado {
+    font-size: 1.5em;
+    background-color: #4a6570;
+    /* Fondo gris azulado para el resultado */
+    color: #ffffff;
+    /* Texto blanco para contraste */
+    border-radius: 5px;
+}
+
+input.form-control {
+    background-color: #ffffff;
+    /* Color blanco para inputs */
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+input.form-control:focus {
+    background-color: #e0e0e0;
+    /* Color gris claro al enfocar */
+    color: black;
+    /* Texto negro */
+    border: none;
+}
+
+.btn {
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.btn-info {
+    background-color: #5c7a89;
+    /* Color gris azulado oscuro para botones */
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #4a6570;
+    /* Color más oscuro al pasar el mouse */
+}

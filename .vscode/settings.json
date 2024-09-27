@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.commandsToSkipShell": [
+        "{    \"[html]\": {       \"editor.defaultFormatter\": null    } }"
+    ],
+    "workbench.settings.useSplitJSON": true
+}
