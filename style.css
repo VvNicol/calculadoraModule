@@ -3,52 +3,66 @@ body {
     /* Color de fondo oscuro */
 }
 
+/* Animación para el contenedor de la calculadora */
 .calculator-container {
     background-color: #3f4a61;
-    /* Fondo gris oscuro para la calculadora */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* Sombra más pronunciada */
+    animation: fadeIn 0.5s ease;
+    /* Fade in al cargar */
 }
 
+/* Efecto de aparición suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación para el resultado */
 #resultado {
     font-size: 1.5em;
     background-color: #4a6570;
-    /* Fondo gris azulado para el resultado */
     color: #ffffff;
-    /* Texto blanco para contraste */
     border-radius: 5px;
+    animation: slideIn 0.5s ease;
+    /* Slide in al cargar */
 }
 
-input.form-control {
-    background-color: #ffffff;
-    /* Color blanco para inputs */
-    color: black;
-    border: none;
-    border-radius: 5px;
+/* Efecto de deslizamiento */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-input.form-control:focus {
-    background-color: #e0e0e0;
-    /* Color gris claro al enfocar */
-    color: black;
-    /* Texto negro */
-    border: none;
-}
-
-.btn {
-    font-size: 1.5em;
-    border-radius: 5px;
-}
-
+/* Animación para los botones al pasar el mouse */
 .btn-info {
     background-color: #5c7a89;
-    /* Color gris azulado oscuro para botones */
     border: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+    /* Transición suave */
 }
 
 .btn-info:hover {
     background-color: #4a6570;
-    /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05);
+    /* Escalar un poco */
+}
+
+/* Efecto de pulsar el botón */
+.btn-info:active {
+    transform: scale(0.95);
+    /* Escalar hacia abajo al hacer clic */
 }
